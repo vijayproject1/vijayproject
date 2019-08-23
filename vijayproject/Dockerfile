@@ -1,4 +1,4 @@
-FROM openjdk:12
-ADD target/vijayproject-0.0.1-SNAPSHOT.jar vijayproject-0.0.1-SNAPSHOT.jar
+FROM openjdk:11
+ADD target/*.jar *.jar
 EXPOSE 8085
-ENTRYPOINT ["java","-jar","vijayproject-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","*.jar"]
