@@ -5,8 +5,6 @@ pipeline {
         stage('Build') { 
             steps {
 			   echo "Maven clean intall";
-			   sh "mvn  clean install"
-
             }
         }
         stage('Test') { 
